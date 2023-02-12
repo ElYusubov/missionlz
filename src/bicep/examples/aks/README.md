@@ -25,7 +25,7 @@ The example below deploys an AKS cluster into [Tier 3 Spoke Network](../../add-o
     aksAgentCount| 1 | Number of agents (VMs) to host docker containers. Allowed values must be in the range of 0 to 1000 (inclusive) for user pools and in the range of 1 to 1000 (inclusive) for system pools. The default value is 1. Please note that increasing this value will require more available IPs in the subnet.
     aksDnsPrefix | mlzaks | Optional DNS prefix to use with hosted Kubernetes API server FQDN, 1 to 54 characters in length, can contain alphanumerics and hyphens, but should start and end with alphanumeric. This cannot be updated once the Managed Cluster has been created. It defaults to "mlzaks".
     kubernetesVersion | 1.21.9 | AKS cluster kubernetes version.
-    vmSize | Standard_D2_v2 | VM size availability varies by region. If a node contains insufficient compute resources (memory, cpu, etc) pods might fail to run correctly. For more details on restricted VM sizes, see: [Sizes for virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes).
+    vmSize | Standard_D2_v2 | VM size availability varies by region. If a node contains insufficient compute resources (memory, cpu, etc) pods might fail to run correctly. For more details on restricted VM sizes, see: [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes).
 
 ## Deploy the example
 

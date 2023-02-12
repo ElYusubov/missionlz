@@ -284,7 +284,7 @@
                 "text": "SCCA guidance and architectures are specific to DoD customers, but they also help civilian customers comply with Trusted Internet Connections (TIC) guidance and help commercial customers that want to implement a secure DMZ to protect their Azure environments.",
                 "link": {
                   "label": "Learn more",
-                  "uri": "https://docs.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture"
+                  "uri": "https://learn.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture"
                 }
               }
             },
@@ -625,7 +625,7 @@
                 "text": "Mission Landing Zone comes bundled with built-in policies that can be applied to the resources it deploys and the ability to enable Microsoft Defender for Cloud for the subscriptions it is deployed into.",
                 "link": {
                   "label": "Learn more",
-                  "uri": "https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+                  "uri": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
                 }
               }
             },
@@ -790,7 +790,7 @@
                 "text": "Mission Landing Zone can provision a Windows and a Linux virtual machine to securely access the network remotely using Azure Bastion hosts.",
                 "link": {
                   "label": "Learn more",
-                  "uri": "https://docs.microsoft.com/en-us/azure/bastion/bastion-overview"
+                  "uri": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview"
                 }
               }
             },

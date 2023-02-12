@@ -8,7 +8,7 @@ Read on to understand what this example does, and when you're ready, collect all
 
 ### Deploys Azure Bastion Host
 
-The docs on Azure Bastion: <https://docs.microsoft.com/en-us/azure/bastion/bastion-overview>
+The docs on Azure Bastion: <https://learn.microsoft.com/en-us/azure/bastion/bastion-overview>
 
 Some particulars about Bastion:
 
@@ -20,7 +20,7 @@ Some particulars about Bastion:
 
 This example deploys two virtual machines into a new subnet in the existing Hub virtual network to serve as jumpboxes.
 
-The docs on Virtual Machines: <https://docs.microsoft.com/en-us/azure/templates/microsoft.compute/virtualmachines?tabs=json>
+The docs on Virtual Machines: <https://learn.microsoft.com/en-us/azure/templates/microsoft.compute/virtualmachines?tabs=json>
 
 ## Pre-requisites
 

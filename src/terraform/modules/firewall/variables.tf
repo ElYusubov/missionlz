@@ -95,7 +95,7 @@ variable "tags" {
 # With forced tunneling on, Configure Azure Firewall to never SNAT regardless of the destination IP address,
 # use 0.0.0.0/0 as your private IP address range.
 # With this configuration, Azure Firewall can never route traffic directly to the Internet.
-# see: https://docs.microsoft.com/en-us/azure/firewall/snat-private-range
+# see: https://learn.microsoft.com/en-us/azure/firewall/snat-private-range
 variable "disable_snat_ip_range" {
   description = "The address space to be used to ensure that SNAT is disabled."
   default     = ["0.0.0.0/0"]

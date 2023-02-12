@@ -24,7 +24,7 @@ param appServiceSkuName string = 'p2v2'
 @description('The deployment location being deployed to.')
 param location string  = deployment().location
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 var defaultTags = {
   'DeploymentType': 'MissionLandingZoneARM'

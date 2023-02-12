@@ -53,7 +53,7 @@ param supportedClouds array = [
 @description('A suffix to use for naming deployments uniquely. It defaults to the Bicep resolution of the "utcNow()" function.')
 param deploymentNameSuffix string = utcNow()
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 
 // NETWORK ADDRESS SPACE PARAMETERS
@@ -113,7 +113,7 @@ param firewallThreatIntelMode string = 'Alert'
 @description('[Alert/Deny/Off] The Azure Firewall Intrusion Detection mode. Valid values are "Alert", "Deny", or "Off". The default value is "Alert".')
 param firewallIntrusionDetectionMode string = 'Alert'
 
-@description('An array of Firewall Diagnostic Logs categories to collect. See "https://docs.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal" for valid values.')
+@description('An array of Firewall Diagnostic Logs categories to collect. See "https://learn.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal" for valid values.')
 param firewallDiagnosticsLogs array = [
   {
     category: 'AzureFirewallApplicationRule'
@@ -129,7 +129,7 @@ param firewallDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Firewall Diagnostic Metrics categories to collect. See "https://docs.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal" for valid values.')
+@description('An array of Firewall Diagnostic Metrics categories to collect. See "https://learn.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal" for valid values.')
 param firewallDiagnosticsMetrics array = [
   {
     category: 'AllMetrics'
@@ -137,22 +137,22 @@ param firewallDiagnosticsMetrics array = [
   }
 ]
 
-@description('An array of Service Endpoints to enable for the Azure Firewall Client Subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Azure Firewall Client Subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param firewallClientSubnetServiceEndpoints array = []
 
-@description('An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or "No-Zone", because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
+@description('An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or "No-Zone", because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
 param firewallClientPublicIPAddressAvailabilityZones array = []
 
-@description('An array of Service Endpoints to enable for the Azure Firewall Management Subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Azure Firewall Management Subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param firewallManagementSubnetServiceEndpoints array = []
 
-@description('An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or "No-Zone", because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
+@description('An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or "No-Zone", because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
 param firewallManagementPublicIPAddressAvailabilityZones array = []
 
 @description('Supernet CIDR address for the entire network of vnets, this address allows for communication between spokes. Recommended to use a Supernet calculator if modifying vnet addresses')
 param firewallSupernetIPAddress string = '10.0.96.0/19'
 
-@description('An array of Public IP Address Diagnostic Logs for the Azure Firewall. See https://docs.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications#configure-ddos-diagnostic-logs for valid settings.')
+@description('An array of Public IP Address Diagnostic Logs for the Azure Firewall. See https://learn.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications#configure-ddos-diagnostic-logs for valid settings.')
 param publicIPAddressDiagnosticsLogs array = [
   {
     category: 'DDoSProtectionNotifications'
@@ -168,7 +168,7 @@ param publicIPAddressDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Public IP Address Diagnostic Metrics for the Azure Firewall. See https://docs.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications for valid settings.')
+@description('An array of Public IP Address Diagnostic Metrics for the Azure Firewall. See https://learn.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications for valid settings.')
 param publicIPAddressDiagnosticsMetrics array = [
   {
     category: 'AllMetrics'
@@ -178,16 +178,16 @@ param publicIPAddressDiagnosticsMetrics array = [
 
 // HUB NETWORK PARAMETERS
 
-@description('An array of Network Diagnostic Logs to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
+@description('An array of Network Diagnostic Logs to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
 param hubVirtualNetworkDiagnosticsLogs array = []
 
-@description('An array of Network Diagnostic Metrics to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Diagnostic Metrics to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param hubVirtualNetworkDiagnosticsMetrics array = []
 
-@description('An array of Network Security Group Rules to apply to the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
+@description('An array of Network Security Group Rules to apply to the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
 param hubNetworkSecurityGroupRules array = []
 
-@description('An array of Network Security Group diagnostic logs to apply to the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param hubNetworkSecurityGroupDiagnosticsLogs array = [
   {
     category: 'NetworkSecurityGroupEvent'
@@ -199,10 +199,10 @@ param hubNetworkSecurityGroupDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Network Security Group Metrics to apply to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Security Group Metrics to apply to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param hubNetworkSecurityGroupDiagnosticsMetrics array = []
 
-@description('An array of Service Endpoints to enable for the Hub subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Hub subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param hubSubnetServiceEndpoints array = [
   {
     service: 'Microsoft.Storage'
@@ -211,13 +211,13 @@ param hubSubnetServiceEndpoints array = [
 
 // IDENTITY PARAMETERS
 
-@description('An array of Network Diagnostic Logs to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
+@description('An array of Network Diagnostic Logs to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
 param identityVirtualNetworkDiagnosticsLogs array = []
 
-@description('An array of Network Diagnostic Metrics to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Diagnostic Metrics to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param identityVirtualNetworkDiagnosticsMetrics array = []
 
-@description('An array of Network Security Group Rules to apply to the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
+@description('An array of Network Security Group Rules to apply to the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
 param identityNetworkSecurityGroupRules array = [
   {
     name: 'Allow-Traffic-From-Spokes'
@@ -244,7 +244,7 @@ param identityNetworkSecurityGroupRules array = [
   }
 ]
 
-@description('An array of Network Security Group diagnostic logs to apply to the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param identityNetworkSecurityGroupDiagnosticsLogs array = [
   {
     category: 'NetworkSecurityGroupEvent'
@@ -256,10 +256,10 @@ param identityNetworkSecurityGroupDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Network Security Group Metrics to apply to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Security Group Metrics to apply to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param identityNetworkSecurityGroupDiagnosticsMetrics array = []
 
-@description('An array of Service Endpoints to enable for the Identity subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Identity subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param identitySubnetServiceEndpoints array = [
   {
     service: 'Microsoft.Storage'
@@ -268,13 +268,13 @@ param identitySubnetServiceEndpoints array = [
 
 // OPERATIONS PARAMETERS
 
-@description('An array of Network Diagnostic Logs to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
+@description('An array of Network Diagnostic Logs to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
 param operationsVirtualNetworkDiagnosticsLogs array = []
 
-@description('An array of Network Diagnostic Metrics to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Diagnostic Metrics to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param operationsVirtualNetworkDiagnosticsMetrics array = []
 
-@description('An array of Network Security Group rules to apply to the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
+@description('An array of Network Security Group rules to apply to the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
 param operationsNetworkSecurityGroupRules array = [
   {
     name: 'Allow-Traffic-From-Spokes'
@@ -301,7 +301,7 @@ param operationsNetworkSecurityGroupRules array = [
   }
 ]
 
-@description('An array of Network Security Group diagnostic logs to apply to the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param operationsNetworkSecurityGroupDiagnosticsLogs array = [
   {
     category: 'NetworkSecurityGroupEvent'
@@ -313,10 +313,10 @@ param operationsNetworkSecurityGroupDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Network Security Group Diagnostic Metrics to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Security Group Diagnostic Metrics to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param operationsNetworkSecurityGroupDiagnosticsMetrics array = []
 
-@description('An array of Service Endpoints to enable for the Operations subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Operations subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param operationsSubnetServiceEndpoints array = [
   {
     service: 'Microsoft.Storage'
@@ -325,13 +325,13 @@ param operationsSubnetServiceEndpoints array = [
 
 // SHARED SERVICES PARAMETERS
 
-@description('An array of Network Diagnostic Logs to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
+@description('An array of Network Diagnostic Logs to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
 param sharedServicesVirtualNetworkDiagnosticsLogs array = []
 
-@description('An array of Network Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param sharedServicesVirtualNetworkDiagnosticsMetrics array = []
 
-@description('An array of Network Security Group rules to apply to the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
+@description('An array of Network Security Group rules to apply to the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
 param sharedServicesNetworkSecurityGroupRules array = [
   {
     name: 'Allow-Traffic-From-Spokes'
@@ -358,7 +358,7 @@ param sharedServicesNetworkSecurityGroupRules array = [
   }
 ]
 
-@description('An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param sharedServicesNetworkSecurityGroupDiagnosticsLogs array = [
   {
     category: 'NetworkSecurityGroupEvent'
@@ -370,10 +370,10 @@ param sharedServicesNetworkSecurityGroupDiagnosticsLogs array = [
   }
 ]
 
-@description('An array of Network Security Group Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Security Group Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param sharedServicesNetworkSecurityGroupDiagnosticsMetrics array = []
 
-@description('An array of Service Endpoints to enable for the SharedServices subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the SharedServices subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param sharedServicesSubnetServiceEndpoints array = [
   {
     service: 'Microsoft.Storage'
@@ -399,10 +399,10 @@ param logAnalyticsWorkspaceRetentionInDays int = 30
   'PerGB2018'
   'Standalone'
 ])
-@description('[Free/Standard/Premium/PerNode/PerGB2018/Standalone] The SKU for the Log Analytics Workspace. It defaults to "PerGB2018". See https://docs.microsoft.com/en-us/azure/azure-monitor/logs/resource-manager-workspace for valid settings.')
+@description('[Free/Standard/Premium/PerNode/PerGB2018/Standalone] The SKU for the Log Analytics Workspace. It defaults to "PerGB2018". See https://learn.microsoft.com/en-us/azure/azure-monitor/logs/resource-manager-workspace for valid settings.')
 param logAnalyticsWorkspaceSkuName string = 'PerGB2018'
 
-@description('The Storage Account SKU to use for log storage. It defaults to "Standard_GRS". See https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings.')
+@description('The Storage Account SKU to use for log storage. It defaults to "Standard_GRS". See https://learn.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings.')
 param logStorageSkuName string = 'Standard_GRS'
 
 // REMOTE ACCESS PARAMETERS
@@ -413,7 +413,7 @@ param deployRemoteAccess bool = false
 @description('The CIDR Subnet Address Prefix for the Azure Bastion Subnet. It must be in the Hub Virtual Network space "hubVirtualNetworkAddressPrefix" parameter value. It must be /27 or larger.')
 param bastionHostSubnetAddressPrefix string = '10.0.100.160/27'
 
-@description('The Azure Bastion Public IP Address Availability Zones. It defaults to "No-Zone" because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
+@description('The Azure Bastion Public IP Address Availability Zones. It defaults to "No-Zone" because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings.')
 param bastionHostPublicIPAddressAvailabilityZones array = []
 
 // LINUX VIRTUAL MACHINE PARAMETERS
@@ -428,7 +428,7 @@ param linuxVmAdminUsername string = 'azureuser'
 @description('[sshPublicKey/password] The authentication type for the Linux Virtual Machine to Azure Bastion remote into. It defaults to "password".')
 param linuxVmAuthenticationType string = 'password'
 
-@description('The administrator password or public SSH key for the Linux Virtual Machine to Azure Bastion remote into. See https://docs.microsoft.com/en-us/azure/virtual-machines/linux/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
+@description('The administrator password or public SSH key for the Linux Virtual Machine to Azure Bastion remote into. See https://learn.microsoft.com/en-us/azure/virtual-machines/linux/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
 @secure()
 @minLength(12)
 param linuxVmAdminPasswordOrKey string = deployRemoteAccess ? '' : newGuid()
@@ -466,7 +466,7 @@ param linuxNetworkInterfacePrivateIPAddressAllocationMethod string = 'Dynamic'
 @description('The administrator username for the Windows Virtual Machine to Azure Bastion remote into. It defaults to "azureuser".')
 param windowsVmAdminUsername string = 'azureuser'
 
-@description('The administrator password the Windows Virtual Machine to Azure Bastion remote into. It must be > 12 characters in length. See https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
+@description('The administrator password the Windows Virtual Machine to Azure Bastion remote into. It must be > 12 characters in length. See https://learn.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
 @secure()
 @minLength(12)
 param windowsVmAdminPassword string = deployRemoteAccess ? '' : newGuid()
@@ -1075,7 +1075,7 @@ module remoteAccess './core/remote-access.bicep' = if (deployRemoteAccess) {
     az deployment sub show --name <your deployment name> --query properties.outputs
 
   With that output as JSON you could pass it as arguments to another deployment using the Shared Variable File Pattern:
-    https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file
+    https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file
   
   The output is a JSON object, you can use your favorite tool, like PowerShell or jq, to parse the values you need.
 

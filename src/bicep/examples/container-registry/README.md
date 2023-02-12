@@ -8,7 +8,7 @@ Read on to understand what this example does, and when you're ready, collect all
 
 ### Deploys an Azure Container Registry
 
-The docs on Azure Container Registry: <https://docs.microsoft.com/en-us/azure/container-registry/>.  This sample shows how to deploy using Bicep and utilizes the shared file variable pattern to support the deployment.  By default, this template will deploy resources into standard default MLZ subscriptions and resource groups.  
+The docs on Azure Container Registry: <https://learn.microsoft.com/en-us/azure/container-registry/>.  This sample shows how to deploy using Bicep and utilizes the shared file variable pattern to support the deployment.  By default, this template will deploy resources into standard default MLZ subscriptions and resource groups.  
 
 The subscription and resource group can be changed by providing the resource group name (Param: targetResourceGroup) and ensuring that the Azure context is set the proper subscription.  
 
@@ -58,6 +58,6 @@ az deployment sub create -n deployContainerRegistry -f container-registry.bicep 
 
 ### References
 
-* [Introduction to private Docker container registries in Azure](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
-* [Bicep Shared Variable File Pattern](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file)
-* [Azure Container Registry service tiers(Sku's)](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-skus)
+* [Introduction to private Docker container registries in Azure](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+* [Bicep Shared Variable File Pattern](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file)
+* [Azure Container Registry service tiers(Sku's)](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-skus)

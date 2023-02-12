@@ -8,7 +8,7 @@ Read on to understand what this example does, and when you're ready, collect all
 
 ### Deploys an Azure App Service Plan
 
-The docs on Azure App Service Plans: <https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans>.  This sample shows how to deploy using Bicep and utilizes the shared file variable pattern to support the deployment.  By default, this template will deploy resources into standard default MLZ subscriptions and resource groups.  
+The docs on Azure App Service Plans: <https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans>.  This sample shows how to deploy using Bicep and utilizes the shared file variable pattern to support the deployment.  By default, this template will deploy resources into standard default MLZ subscriptions and resource groups.  
 
 The subscription and resource group can be changed by providing the resource group name (Param: targetResourceGroup) and ensuring that the Azure context is set the proper subscription.  
 
@@ -59,5 +59,5 @@ az deployment sub create -n deployAppServicePlan -f appService.bicep -l eastus
 
 ### References
 
-* <https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans>
-* <https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file>
+* <https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans>
+* <https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/patterns-shared-variable-file>

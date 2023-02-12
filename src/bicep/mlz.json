@@ -72,7 +72,7 @@
       "type": "object",
       "defaultValue": {},
       "metadata": {
-        "description": "A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings."
+        "description": "A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings."
       }
     },
     "hubVirtualNetworkAddressPrefix": {
@@ -197,7 +197,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Firewall Diagnostic Logs categories to collect. See \"https://docs.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal\" for valid values."
+        "description": "An array of Firewall Diagnostic Logs categories to collect. See \"https://learn.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal\" for valid values."
       }
     },
     "firewallDiagnosticsMetrics": {
@@ -209,35 +209,35 @@
         }
       ],
       "metadata": {
-        "description": "An array of Firewall Diagnostic Metrics categories to collect. See \"https://docs.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal\" for valid values."
+        "description": "An array of Firewall Diagnostic Metrics categories to collect. See \"https://learn.microsoft.com/en-us/azure/firewall/firewall-diagnostics#enable-diagnostic-logging-through-the-azure-portal\" for valid values."
       }
     },
     "firewallClientSubnetServiceEndpoints": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the Azure Firewall Client Subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the Azure Firewall Client Subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "firewallClientPublicIPAddressAvailabilityZones": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or \"No-Zone\", because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
+        "description": "An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or \"No-Zone\", because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
       }
     },
     "firewallManagementSubnetServiceEndpoints": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the Azure Firewall Management Subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the Azure Firewall Management Subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "firewallManagementPublicIPAddressAvailabilityZones": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or \"No-Zone\", because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
+        "description": "An array of Azure Firewall Public IP Address Availability Zones. It defaults to empty, or \"No-Zone\", because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
       }
     },
     "firewallSupernetIPAddress": {
@@ -264,7 +264,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Public IP Address Diagnostic Logs for the Azure Firewall. See https://docs.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications#configure-ddos-diagnostic-logs for valid settings."
+        "description": "An array of Public IP Address Diagnostic Logs for the Azure Firewall. See https://learn.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications#configure-ddos-diagnostic-logs for valid settings."
       }
     },
     "publicIPAddressDiagnosticsMetrics": {
@@ -276,28 +276,28 @@
         }
       ],
       "metadata": {
-        "description": "An array of Public IP Address Diagnostic Metrics for the Azure Firewall. See https://docs.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications for valid settings."
+        "description": "An array of Public IP Address Diagnostic Metrics for the Azure Firewall. See https://learn.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications for valid settings."
       }
     },
     "hubVirtualNetworkDiagnosticsLogs": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Logs to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
+        "description": "An array of Network Diagnostic Logs to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
       }
     },
     "hubVirtualNetworkDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Metrics to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Diagnostic Metrics to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "hubNetworkSecurityGroupRules": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Security Group Rules to apply to the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
+        "description": "An array of Network Security Group Rules to apply to the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
       }
     },
     "hubNetworkSecurityGroupDiagnosticsLogs": {
@@ -313,14 +313,14 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group diagnostic logs to apply to the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
+        "description": "An array of Network Security Group diagnostic logs to apply to the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
       }
     },
     "hubNetworkSecurityGroupDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Security Group Metrics to apply to enable for the Hub Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Security Group Metrics to apply to enable for the Hub Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "hubSubnetServiceEndpoints": {
@@ -331,21 +331,21 @@
         }
       ],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the Hub subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the Hub subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "identityVirtualNetworkDiagnosticsLogs": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Logs to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
+        "description": "An array of Network Diagnostic Logs to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
       }
     },
     "identityVirtualNetworkDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Metrics to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Diagnostic Metrics to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "identityNetworkSecurityGroupRules": {
@@ -376,7 +376,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group Rules to apply to the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
+        "description": "An array of Network Security Group Rules to apply to the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
       }
     },
     "identityNetworkSecurityGroupDiagnosticsLogs": {
@@ -392,14 +392,14 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group diagnostic logs to apply to the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
+        "description": "An array of Network Security Group diagnostic logs to apply to the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
       }
     },
     "identityNetworkSecurityGroupDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Security Group Metrics to apply to enable for the Identity Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Security Group Metrics to apply to enable for the Identity Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "identitySubnetServiceEndpoints": {
@@ -410,21 +410,21 @@
         }
       ],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the Identity subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the Identity subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "operationsVirtualNetworkDiagnosticsLogs": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Logs to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
+        "description": "An array of Network Diagnostic Logs to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
       }
     },
     "operationsVirtualNetworkDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Metrics to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Diagnostic Metrics to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "operationsNetworkSecurityGroupRules": {
@@ -455,7 +455,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group rules to apply to the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
+        "description": "An array of Network Security Group rules to apply to the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
       }
     },
     "operationsNetworkSecurityGroupDiagnosticsLogs": {
@@ -471,14 +471,14 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group diagnostic logs to apply to the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
+        "description": "An array of Network Security Group diagnostic logs to apply to the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
       }
     },
     "operationsNetworkSecurityGroupDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Security Group Diagnostic Metrics to enable for the Operations Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Security Group Diagnostic Metrics to enable for the Operations Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "operationsSubnetServiceEndpoints": {
@@ -489,21 +489,21 @@
         }
       ],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the Operations subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the Operations subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "sharedServicesVirtualNetworkDiagnosticsLogs": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Logs to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
+        "description": "An array of Network Diagnostic Logs to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings."
       }
     },
     "sharedServicesVirtualNetworkDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "sharedServicesNetworkSecurityGroupRules": {
@@ -534,7 +534,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group rules to apply to the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
+        "description": "An array of Network Security Group rules to apply to the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings."
       }
     },
     "sharedServicesNetworkSecurityGroupDiagnosticsLogs": {
@@ -550,14 +550,14 @@
         }
       ],
       "metadata": {
-        "description": "An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
+        "description": "An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings."
       }
     },
     "sharedServicesNetworkSecurityGroupDiagnosticsMetrics": {
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "An array of Network Security Group Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
+        "description": "An array of Network Security Group Diagnostic Metrics to enable for the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings."
       }
     },
     "sharedServicesSubnetServiceEndpoints": {
@@ -568,7 +568,7 @@
         }
       ],
       "metadata": {
-        "description": "An array of Service Endpoints to enable for the SharedServices subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
+        "description": "An array of Service Endpoints to enable for the SharedServices subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings."
       }
     },
     "deploySentinel": {
@@ -596,7 +596,7 @@
       "type": "string",
       "defaultValue": "PerGB2018",
       "metadata": {
-        "description": "[Free/Standard/Premium/PerNode/PerGB2018/Standalone] The SKU for the Log Analytics Workspace. It defaults to \"PerGB2018\". See https://docs.microsoft.com/en-us/azure/azure-monitor/logs/resource-manager-workspace for valid settings."
+        "description": "[Free/Standard/Premium/PerNode/PerGB2018/Standalone] The SKU for the Log Analytics Workspace. It defaults to \"PerGB2018\". See https://learn.microsoft.com/en-us/azure/azure-monitor/logs/resource-manager-workspace for valid settings."
       },
       "allowedValues": [
         "Free",
@@ -611,7 +611,7 @@
       "type": "string",
       "defaultValue": "Standard_GRS",
       "metadata": {
-        "description": "The Storage Account SKU to use for log storage. It defaults to \"Standard_GRS\". See https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings."
+        "description": "The Storage Account SKU to use for log storage. It defaults to \"Standard_GRS\". See https://learn.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings."
       }
     },
     "deployRemoteAccess": {
@@ -632,7 +632,7 @@
       "type": "array",
       "defaultValue": [],
       "metadata": {
-        "description": "The Azure Bastion Public IP Address Availability Zones. It defaults to \"No-Zone\" because Availability Zones are not available in every cloud. See https://docs.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
+        "description": "The Azure Bastion Public IP Address Availability Zones. It defaults to \"No-Zone\" because Availability Zones are not available in every cloud. See https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku for valid settings."
       }
     },
     "linuxVmAdminUsername": {
@@ -658,7 +658,7 @@
       "defaultValue": "[if(parameters('deployRemoteAccess'), '', newGuid())]",
       "minLength": 12,
       "metadata": {
-        "description": "The administrator password or public SSH key for the Linux Virtual Machine to Azure Bastion remote into. See https://docs.microsoft.com/en-us/azure/virtual-machines/linux/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements."
+        "description": "The administrator password or public SSH key for the Linux Virtual Machine to Azure Bastion remote into. See https://learn.microsoft.com/en-us/azure/virtual-machines/linux/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements."
       }
     },
     "linuxVmSize": {
@@ -733,7 +733,7 @@
       "defaultValue": "[if(parameters('deployRemoteAccess'), '', newGuid())]",
       "minLength": 12,
       "metadata": {
-        "description": "The administrator password the Windows Virtual Machine to Azure Bastion remote into. It must be > 12 characters in length. See https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements."
+        "description": "The administrator password the Windows Virtual Machine to Azure Bastion remote into. It must be > 12 characters in length. See https://learn.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements."
       }
     },
     "windowsVmSize": {

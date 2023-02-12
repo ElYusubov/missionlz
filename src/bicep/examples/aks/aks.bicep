@@ -49,7 +49,7 @@ param dockerBridgeCidr string
 @description('The region to deploy resources into. It defaults to the deployment location.')
 param location string = deployment().location
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 
 @description('Number of agents (VMs) to host docker containers. Allowed values must be in the range of 0 to 1000 (inclusive) for user pools and in the range of 1 to 1000 (inclusive) for system pools. The default value is 1.')
@@ -63,7 +63,7 @@ param aksDnsPrefix string = '${resourcePrefix}aks'
 @description('AKS cluster kubernetes version.')
 param kubernetesVersion string = '1.24.3'
 
-@description('VM size availability varies by region. If a node contains insufficient compute resources (memory, cpu, etc) pods might fail to run correctly. For more details on restricted VM sizes, see: https://docs.microsoft.com/en-us/azure/virtual-machines/sizes')
+@description('VM size availability varies by region. If a node contains insufficient compute resources (memory, cpu, etc) pods might fail to run correctly. For more details on restricted VM sizes, see: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes')
 param vmSize string = 'Standard_D2_v2'
 
 /*

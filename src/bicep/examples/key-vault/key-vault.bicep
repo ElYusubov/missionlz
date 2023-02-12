@@ -27,7 +27,7 @@ param targetResourceGroup string = '${mlzDeploymentVariables.spokes.Value[2].res
 @description('The resource id of the Virtual Network Subnet to attach the private endpoint to. If unchanged or not specified, the MLZ shared services VNET Subnet is used.')
 param targetVirtualNetworkSubnetResourceId string = '${mlzDeploymentVariables.spokes.Value[2].subnetResourceId}'
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 var defaultTags = {
   DeploymentType: 'MissionLandingZoneARM'

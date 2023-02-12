@@ -19,7 +19,7 @@ In an Enterprise setting, Microsoft recommends managing groups of subscriptions 
 Management Groups can be created in a hierarchy where the policies, RBAC, and compliance settings of parent management groups are inherited by child management groups.  This provides a way to manage common governance settings at an appropriate level for each subscription.
 
 > For more information on Management Groups please see:  
-[What are Azure Management Groups?](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
+[What are Azure Management Groups?](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview)
 
 ## Recommendation
 
@@ -41,9 +41,9 @@ The Tier 3 (workload) subscriptions would probably have different management con
 
 1. Create the Management Group
 
-    - using the [Azure Portal](https://docs.microsoft.com/en-us/azure/governance/management-groups/create-management-group-portal)
-    - using the [Azure CLI](https://docs.microsoft.com/en-us/azure/governance/management-groups/create-management-group-azure-cli)
-    - using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/governance/management-groups/create-management-group-powershell)
+    - using the [Azure Portal](https://learn.microsoft.com/en-us/azure/governance/management-groups/create-management-group-portal)
+    - using the [Azure CLI](https://learn.microsoft.com/en-us/azure/governance/management-groups/create-management-group-azure-cli)
+    - using [Azure PowerShell](https://learn.microsoft.com/en-us/azure/governance/management-groups/create-management-group-powershell)
 
 1. Click on the zero in the `Child subscriptions` column for the new management group to open the Subscriptions list. In the example below, our new management group is named `MLZ Tier 3 Group`.  
 
@@ -77,7 +77,7 @@ The Tier 3 (workload) subscriptions would probably have different management con
 
 ## See also
 
-Azure Docs: [Manage your resources with management groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/manage)  
+Azure Docs: [Manage your resources with management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage)  
 Video: [Azure Management Groups Overview 1/10/2019](https://www.youtube.com/watch?v=jOprhCxnEAg)  
 Video: Management groups in [Azure Governance #1 - Overview](https://youtu.be/NxcwCwc_wmM?t=238) at [Azure Academy](https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ)
-Microsoft Docs: [Azure management groups documentation](https://docs.microsoft.com/en-us/azure/governance/management-groups/)
+Microsoft Docs: [Azure management groups documentation](https://learn.microsoft.com/en-us/azure/governance/management-groups/)

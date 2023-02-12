@@ -8,7 +8,7 @@ Read on to understand what this example does, and when you're ready, collect all
 
 ### Deploys an Azure Automation Account
 
-The docs on Azure Automation (Automation Accounts): <https://docs.microsoft.com/en-us/azure/automation/>.  
+The docs on Azure Automation (Automation Accounts): <https://learn.microsoft.com/en-us/azure/automation/>.  
 
 ## Prerequisites
 
@@ -57,5 +57,5 @@ az deployment sub create -n deployAzureAutomation -f automation-account.bicep -l
 
 ### References
 
-* [Azure Automation Documentation](https://docs.microsoft.com/en-us/azure/automation/)
+* [Azure Automation Documentation](https://learn.microsoft.com/en-us/azure/automation/)
 * [Azure Automation Examples](https://github.com/azureautomation/)

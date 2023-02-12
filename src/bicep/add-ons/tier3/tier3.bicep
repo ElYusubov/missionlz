@@ -57,16 +57,16 @@ param emailSecurityContact string = mlzDeploymentVariables.emailSecurityContact.
 @description('The address prefix for the network spoke vnet.')
 param virtualNetworkAddressPrefix string = '10.0.125.0/26'
 
-@description('An array of Network Diagnostic Logs to enable for the workload Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
+@description('An array of Network Diagnostic Logs to enable for the workload Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#logs for valid settings.')
 param virtualNetworkDiagnosticsLogs array = []
 
-@description('An array of Network Diagnostic Metrics to enable for the workload Virtual Network. See https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
+@description('An array of Network Diagnostic Metrics to enable for the workload Virtual Network. See https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/diagnostic-settings?tabs=CMD#metrics for valid settings.')
 param virtualNetworkDiagnosticsMetrics array = []
 
-@description('An array of Network Security Group rules to apply to the workload Virtual Network. See https://docs.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
+@description('An array of Network Security Group rules to apply to the workload Virtual Network. See https://learn.microsoft.com/en-us/azure/templates/microsoft.network/networksecuritygroups/securityrules?tabs=bicep#securityrulepropertiesformat for valid settings.')
 param networkSecurityGroupRules array = []
 
-@description('An array of Network Security Group diagnostic logs to apply to the workload Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the workload Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param networkSecurityGroupDiagnosticsLogs array = [
   {
     category: 'NetworkSecurityGroupEvent'
@@ -77,19 +77,19 @@ param networkSecurityGroupDiagnosticsLogs array = [
     enabled: true
   }
 ]
-@description('An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
+@description('An array of Network Security Group diagnostic logs to apply to the SharedServices Virtual Network. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log#log-categories for valid settings.')
 param networkSecurityGroupDiagnosticsMetrics array = []
 
 @description('The CIDR Virtual Network Address Prefix for the Workload Virtual Network.')
 param subnetAddressPrefix string = '10.0.125.0/27'
 
-@description('An array of Service Endpoints to enable for the Operations subnet. See https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
+@description('An array of Service Endpoints to enable for the Operations subnet. See https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview for valid settings.')
 param subnetServiceEndpoints array = []
 
-@description('The Storage Account SKU to use for log storage. It defaults to "Standard_GRS". See https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings.')
+@description('The Storage Account SKU to use for log storage. It defaults to "Standard_GRS". See https://learn.microsoft.com/en-us/rest/api/storagerp/srp_sku_types for valid settings.')
 param logStorageSkuName string = 'Standard_GRS'
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {} 
 
 @description('A suffix to use for naming deployments uniquely. It defaults to the Bicep resolution of the "utcNow()" function.')

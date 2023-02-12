@@ -6,7 +6,7 @@ This example adds an Azure Sentinel solution to a Log Analytics Workspace using 
 
 ### Deploys Sentinel
 
-The docs on Azure Sentinel: <https://docs.microsoft.com/en-us/azure/sentinel/overview>
+The docs on Azure Sentinel: <https://learn.microsoft.com/en-us/azure/sentinel/overview>
 
 ## Pre-requisites
 

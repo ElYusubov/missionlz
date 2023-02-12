@@ -4,7 +4,7 @@ A goal of Mission Landing Zone (MLZ) is to ensure deployments have the tools and
 
 This does not mean that workloads are compliant, but it does mean that the technologies in use can be compliant. This is caused by not only the varying number of compliance bodies involved and and the regulations they mandate but also caused by the decisions required by how and what controls are followed.
 
-We created an example in the MLZ deployment that can be audited for current National Institute of Standards and Technology (NIST) controls and requirements using the [Azure Policies built in initiative for NIST 800-53](https://docs.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4).
+We created an example in the MLZ deployment that can be audited for current National Institute of Standards and Technology (NIST) controls and requirements using the [Azure Policies built in initiative for NIST 800-53](https://learn.microsoft.com/en-us/azure/governance/policy/samples/nist-sp-800-53-r4).
 
 _Note: this is focused on NIST controls that have built in policies in Azure clouds._
 

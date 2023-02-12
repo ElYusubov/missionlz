@@ -6,7 +6,7 @@ param logAnalyticsWorkspaceResourceId string = mlzDeploymentVariables.logAnalyti
 @description('The region to deploy resources into. It defaults to the deployment location.')
 param location string = resourceGroup().location
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 
 @description('Prefix the VM names will start with.')
@@ -18,7 +18,7 @@ param vmCount int = 2
 @description('The administrator username for the Virtual Machine to remote into.')
 param vmAdminUsername string = 'azureuser'
 
-@description('The administrator password the Virtual Machine to remote into. It must be > 12 characters in length. See https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
+@description('The administrator password the Virtual Machine to remote into. It must be > 12 characters in length. See https://learn.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm- for password requirements.')
 @secure()
 @minLength(12)
 param vmAdminPassword string

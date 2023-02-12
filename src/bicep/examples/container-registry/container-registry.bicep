@@ -14,7 +14,7 @@ param contRegistryName string = replace('${mlzDeploymentVariables.mlzResourcePre
 @description('The name of the resource group in which the container registry will be deployed. If unchanged or not specified, the MLZ shared services resource group is used.')
 param targetResourceGroup string = '${mlzDeploymentVariables.spokes.Value[2].resourceGroupName}'
 
-@description('A string dictionary of tags to add to deployed resources. See https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
+@description('A string dictionary of tags to add to deployed resources. See https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json#arm-templates for valid settings.')
 param tags object = {}
 var defaultTags = {
   'DeploymentType': 'MissionLandingZoneARM'

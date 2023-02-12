@@ -6,13 +6,13 @@ This example adds an Azure Sentinel: Zero Trust (TIC3.0) Workbook solution to ML
 
 ### Deploys a Zero Trust (TIC3.0) Workbook in Azure Sentinel
 
-Documentation can be found here: [Build and monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](https://docs.microsoft.com/en-us/security/zero-trust/integrate/sentinel-solution)
+Documentation can be found here: [Build and monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](https://learn.microsoft.com/en-us/security/zero-trust/integrate/sentinel-solution)
 
 ### Pre-requisites
 
 1. A MissionLZ deployment with Microsoft Defender for Cloud and Azure Sentinel enabled
 
-2. Enablement of [enhanced security features in Microfost Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security)
+2. Enablement of [enhanced security features in Microfost Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security)
 
 The following table lists the required parameters for a Mission LZ deployment to enable an Azure Sentinel Workbook:
 

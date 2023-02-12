@@ -9,11 +9,11 @@ This example adds a policy to a given resource group that forces a specific tag 
 Deploys an assignment resource that will assign a tag of the users choosing to be applied to a resource group' s child resources.
 
 Please pay special attention to the fact that this policy applies to new or updated resources within the group, you will need to trigger an update or remediation.  Remediation can be kicked off via the Azure Portal in the Policy Section.  
-For guidance in creating a remediation with the appropriate permissions and applying to all existing resources please see:  [Remediate non-compliant resources with Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources)
+For guidance in creating a remediation with the appropriate permissions and applying to all existing resources please see:  [Remediate non-compliant resources with Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources)
 
 For further reading please consult the following documentation:
 
-[Bicep Quickstart Create a Policy Assignment](https://docs.microsoft.com/en-us/azure/governance/policy/assign-policy-bicep?tabs=azure-powershell)
+[Bicep Quickstart Create a Policy Assignment](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-bicep?tabs=azure-powershell)
 
 [Inherit a tag from a Resource group policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcd3aa116-8754-49c9-a813-ad46512ece54)
 
